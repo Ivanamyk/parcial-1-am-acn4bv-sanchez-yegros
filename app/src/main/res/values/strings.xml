@@ -2,4 +2,5 @@
     <string name="app_name">parcial-1-am-acn4bv-sanchez-yegros</string>
     <string name="mi_texto">Este es mi texto</string>
     <string name="Title_Text">Este es el titulo</string>
+    <string name="contentButton">Mi Botón</string>
 </resources>
