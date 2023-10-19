@@ -8,24 +8,24 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:id="@+id/content"
-        android:layout_width="325dp"
-        android:layout_height="274dp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/mi_texto" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="223dp"
+            android:layout_height="195dp"
+            android:src="@drawable/intro"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textTitle"
@@ -34,17 +34,16 @@
             android:layout_gravity="center"
             android:text="@string/Title_Text" />
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/mi_texto" />
+
+
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="248dp"
-        android:layout_height="219dp"
-        android:src="@drawable/intro"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="69dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
