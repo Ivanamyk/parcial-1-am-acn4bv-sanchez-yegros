@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4bv-sanchez-yegros</string>
-    <string name="mi_texto">Este es mi texto</string>
-    <string name="Title_Text">Este es el titulo</string>
+    <string name="Text_Start">la app para mirar tus series o\n videos gratis!</string>
+    <string name="Title_Text">StreamingJR.</string>
     <string name="contentButton">Mi Botón</string>
+    <string name="button_Title">INGRESAR</string>
+    <string name="Image_Start">Imagen</string>
 </resources>
