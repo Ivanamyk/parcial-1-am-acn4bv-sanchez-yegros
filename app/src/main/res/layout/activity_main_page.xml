@@ -4,6 +4,272 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".Main_Page">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7sp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@tools:sample/avatars"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <TextView
+            android:id="@+id/textHome_pelisNuevas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="27sp"
+            android:layout_marginBottom="50sp"
+            android:text="@string/text_home"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHome_pelisReco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:text="@string/textHome_pelisNuevas"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="233dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/textHome_pelisNuevas"
+                        app:srcCompat="@drawable/movie1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textHome33"
+                            android:layout_width="116dp"
+                            android:layout_height="24dp"
+                            android:layout_marginVertical="200dp"
+                            android:layout_marginEnd="120dp"
+                            android:layout_marginBottom="10sp"
+                            android:text="@string/text_movieTitle"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@tools:sample/avatars"
+                            app:srcCompat="@android:drawable/btn_star_big_on" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="235dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/text_movieTitle"
+                        app:srcCompat="@drawable/movie4" />
+
+                    <TextView
+                        android:id="@+id/textHome44"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginVertical="200dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/text_movieTitle2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="234dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/text_movieTitle3"
+                        app:srcCompat="@drawable/movie6" />
+
+                    <TextView
+                        android:id="@+id/textHome66"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginVertical="200dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/text_movieTitle3"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="339dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHome2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColorHint="@color/black"
+                android:text="@string/textHome_pelisReco"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="233dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/textHome_pelisNuevas"
+                        app:srcCompat="@drawable/movie5" />
+
+                    <TextView
+                        android:id="@+id/textHome3"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginVertical="200dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/text_movieTitle4"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="235dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/text_movieTitle"
+                        app:srcCompat="@drawable/movie7" />
+
+                    <TextView
+                        android:id="@+id/textHome4"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginVertical="200dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/text_movieTitle5"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="183dp"
+                    android:layout_height="234dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="100"
+                    app:cardBackgroundColor="@color/black">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="179dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/text_movieTitle3"
+                        app:srcCompat="@drawable/movie3" />
+
+                    <TextView
+                        android:id="@+id/textHome5"
+                        android:layout_width="116dp"
+                        android:layout_height="34dp"
+                        android:layout_marginVertical="200dp"
+                        android:layout_marginEnd="120dp"
+                        android:layout_marginBottom="10sp"
+                        android:text="@string/text_movieTitle6"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

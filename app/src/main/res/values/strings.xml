@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4bv-sanchez-yegros</string>
-    <string name="Text_Start">la app para mirar tus series o\n videos gratis!</string>
-    <string name="Title_Text">StreamingJR.</string>
+    <string name="Text_Start">la app para mirar tus series o videos gratis!</string>
+    <string name="Title_Text">StreaMix.</string>
+    <string name="text_home">Que te gustaría ver hoy?</string>
+    <string name="textHome_pelisNuevas">Peliculas Nuevas</string>
+    <string name="textHome_pelisReco">Peliculas Recomendadas</string>
+    <string name="text_movieTitle">Joker</string>
+    <string name="text_movieTitle2">Pearl</string>
+    <string name="text_movieTitle3">Joy</string>
+    <string name="text_movieTitle4">Moonlight</string>
+    <string name="text_movieTitle5">MidSommar</string>
+    <string name="text_movieTitle6">Back to the Future</string>
     <string name="contentButton">Mi Botón</string>
     <string name="button_Title">INGRESAR</string>
     <string name="Image_Start">Imagen</string>
