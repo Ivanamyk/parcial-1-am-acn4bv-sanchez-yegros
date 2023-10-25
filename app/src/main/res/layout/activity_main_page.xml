@@ -15,22 +15,45 @@
         android:orientation="vertical">
 
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+        <LinearLayout
+            android:layout_width="378dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textHome_pelisNuevas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="27sp"
-            android:layout_marginBottom="50sp"
-            android:text="@string/text_home"
-            android:textColor="@color/white"
-            android:textSize="23sp" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="37dp"
+                android:layout_height="28dp"
+                android:layout_weight="50"
+                android:contentDescription="@string/Image_Start"
+                android:onClick="backMain"
+                app:srcCompat="@drawable/left_arrow_svgrepo_com"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <TextView
+                android:id="@+id/textHome_pelisNuevas"
+                android:layout_width="284dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/text_home"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

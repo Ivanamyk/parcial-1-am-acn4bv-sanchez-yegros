@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4bv-sanchez-yegros</string>
     <string name="Text_Start">la app para mirar tus series y \npeliculas gratis!</string>
-    <string name="Title_Text">StreaMix.</string>
+    <string name="Title_Text">Streamix.</string>
     <string name="text_home">Que te gustaría ver hoy?</string>
     <string name="textHome_pelisNuevas">Peliculas Nuevas</string>
     <string name="textHome_pelisReco">Peliculas Recomendadas</string>

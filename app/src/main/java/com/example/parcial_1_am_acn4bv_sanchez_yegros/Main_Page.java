@@ -2,6 +2,7 @@ package com.example.parcial_1_am_acn4bv_sanchez_yegros;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -62,9 +63,10 @@ public class Main_Page extends AppCompatActivity {
             }
         });
 
+    }
 
-
-
-
+    public void backMain(View view){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }
