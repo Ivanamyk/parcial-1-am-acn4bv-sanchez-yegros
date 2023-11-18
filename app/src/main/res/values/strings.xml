@@ -6,7 +6,10 @@
     <string name="textHome_pelisNuevas">Peliculas Nuevas</string>
     <string name="textHome_pelisReco">Peliculas Recomendadas</string>
     <string name="text_movieTitle">Joker</string>
+    <string name="text_movieInfo">Arthur Fleck, a party clown, leads an impoverished life with his ailing mother.
+        However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</string>
     <string name="text_movieTitle2">Pearl</string>
+    <string name="text_movieInfoPearl">Trapped on an isolated farm, Pearl must tend to her ailing father under the watch of her mother.</string>
     <string name="text_movieTitle3">Joy</string>
     <string name="text_movieTitle4">Moonlight</string>
     <string name="text_movieTitle5">MidSommar</string>

@@ -69,4 +69,15 @@ public class Main_Page extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
+
+    public void goToInfoJoker(View view){
+        Intent intent = new Intent(this, Screen_Info_Joker.class);
+        startActivity(intent);
+    }
+    public void goToInfoPearl(View view){
+        Intent intent = new Intent(this, Screen_Info_Pearl.class);
+        startActivity(intent);
+    }
+
+
 }
