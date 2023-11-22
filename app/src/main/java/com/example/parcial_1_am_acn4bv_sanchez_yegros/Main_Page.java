@@ -79,5 +79,25 @@ public class Main_Page extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToInfoJoy(View view){
+        Intent intent = new Intent(this, Screen_Info_Joy.class);
+        startActivity(intent);
+    }
+
+    public void goToInfoMoonlight(View view){
+        Intent intent = new Intent(this, Screen_Info_Moonlight.class);
+        startActivity(intent);
+    }
+
+    public void goToInfoMid(View view){
+        Intent intent = new Intent(this, Screen_Info_Midsommar.class);
+        startActivity(intent);
+    }
+
+    public void goToInfoBack(View view){
+        Intent intent = new Intent(this, Screen_Info_Back.class);
+        startActivity(intent);
+    }
+
 
 }

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Parcial1amacn4bvsanchezyegros"
         tools:targetApi="31">
         <activity
+            android:name=".Screen_Info_Back"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_Info_Midsommar"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_Info_Moonlight"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_Info_Joy"
+            android:exported="false" />
+        <activity
             android:name=".Screen_Info_Pearl"
             android:exported="false" />
         <activity

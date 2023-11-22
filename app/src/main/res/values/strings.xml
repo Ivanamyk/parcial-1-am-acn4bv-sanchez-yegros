@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">parcial-1-am-acn4bv-sanchez-yegros</string>
     <string name="Text_Start">la app para mirar tus series y \npeliculas gratis!</string>
     <string name="Title_Text">Streamix.</string>
@@ -9,11 +9,20 @@
     <string name="text_movieInfo">Arthur Fleck, a party clown, leads an impoverished life with his ailing mother.
         However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</string>
     <string name="text_movieTitle2">Pearl</string>
-    <string name="text_movieInfoPearl">Trapped on an isolated farm, Pearl must tend to her ailing father under the watch of her mother.</string>
+    <string name="text_movieInfoPearl">Trapped on an isolated farm, Pearl must tend to her ailing father under the watch of her mother.
+        Lusting for the glamorous life she has seen in movies, Pearl temptations and repressions collide.</string>
     <string name="text_movieTitle3">Joy</string>
+    <string name="text_movieInfoJoy">Following her divorce, a woman faces numerous challenges as she aims to set up a successful business empire. However,
+        she manages to overcome all the odds and fulfil her dream.</string>
     <string name="text_movieTitle4">Moonlight</string>
+    <string name="text_movieInfoMoonlight">Chiron, a young African-American boy, finds guidance in Juan, a drug dealer, who teaches him to carve
+        his own path.</string>
     <string name="text_movieTitle5">MidSommar</string>
+    <string name="text_movieInfoMid">A couple travel to Sweden to visit their friend rural hometown for
+        midsummer festival, but what begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition.</string>
     <string name="text_movieTitle6">Back to the Future</string>
+    <string name="text_movieInfoBack">In the 1980s, an experiment by a weird scientist turns out to be faulty.
+        It leads to his teenaged pal going back in time to the 1950s where he is forced to reunite the younger version of his parents.</string>
     <string name="contentButton">Mi Botón</string>
     <string name="button_Title">INGRESAR</string>
     <string name="Image_Start">Imagen</string>

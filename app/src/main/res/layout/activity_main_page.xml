@@ -172,6 +172,7 @@
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
                         android:text="@string/text_movieTitle3"
+                        android:onClick="goToInfoJoy"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -226,6 +227,7 @@
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
                         android:text="@string/text_movieTitle4"
+                        android:onClick="goToInfoMoonlight"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -255,6 +257,7 @@
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
                         android:text="@string/text_movieTitle5"
+                        android:onClick="goToInfoMid"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -285,6 +288,7 @@
                         android:layout_marginBottom="10sp"
                         android:text="@string/text_movieTitle6"
                         android:textAlignment="center"
+                        android:onClick="goToInfoBack"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
