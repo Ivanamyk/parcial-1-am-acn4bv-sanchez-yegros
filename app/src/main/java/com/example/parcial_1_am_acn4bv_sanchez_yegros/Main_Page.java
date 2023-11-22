@@ -69,7 +69,6 @@ public class Main_Page extends AppCompatActivity {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
-
     public void goToInfoJoker(View view){
         Intent intent = new Intent(this, Screen_Info_Joker.class);
         startActivity(intent);
@@ -99,5 +98,9 @@ public class Main_Page extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToContactUs(View view){
+        Intent intent = new Intent(this, Screen_ContactUs.class);
+        startActivity(intent);
+    }
 
 }

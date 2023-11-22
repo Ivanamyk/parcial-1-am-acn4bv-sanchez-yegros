@@ -16,42 +16,67 @@
 
 
         <LinearLayout
-            android:layout_width="378dp"
-            android:layout_height="117dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="37dp"
-                android:layout_height="28dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="50"
-                android:contentDescription="@string/Image_Start"
-                android:onClick="backMain"
-                app:srcCompat="@drawable/left_arrow_svgrepo_com"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:orientation="horizontal">
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="50" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="10dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="50"
+                    android:contentDescription="@string/Image_Start"
+                    android:onClick="backMain"
+                    app:srcCompat="@drawable/left_arrow_svgrepo_com"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="50"
+                    android:onClick="goToContactUs"
+                    android:text="Contacto"
+                    android:textColor="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textHome_pelisNuevas"
-                android:layout_width="284dp"
-                android:layout_height="69dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
                 android:text="@string/text_home"
                 android:textColor="@color/white"
                 android:textSize="23sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="50" />
 
         </LinearLayout>
 
@@ -137,12 +162,12 @@
                     <TextView
                         android:id="@+id/textHome44"
                         android:layout_width="116dp"
-                        android:layout_height="34dp"
+                        android:layout_height="48dp"
                         android:layout_marginVertical="200dp"
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
-                        android:text="@string/text_movieTitle2"
                         android:onClick="goToInfoPearl"
+                        android:text="@string/text_movieTitle2"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -167,12 +192,12 @@
                     <TextView
                         android:id="@+id/textHome66"
                         android:layout_width="116dp"
-                        android:layout_height="34dp"
+                        android:layout_height="48dp"
                         android:layout_marginVertical="200dp"
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
-                        android:text="@string/text_movieTitle3"
                         android:onClick="goToInfoJoy"
+                        android:text="@string/text_movieTitle3"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -222,12 +247,12 @@
                     <TextView
                         android:id="@+id/textHome3"
                         android:layout_width="116dp"
-                        android:layout_height="34dp"
+                        android:layout_height="48dp"
                         android:layout_marginVertical="200dp"
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
-                        android:text="@string/text_movieTitle4"
                         android:onClick="goToInfoMoonlight"
+                        android:text="@string/text_movieTitle4"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -252,12 +277,12 @@
                     <TextView
                         android:id="@+id/textHome4"
                         android:layout_width="116dp"
-                        android:layout_height="34dp"
+                        android:layout_height="48dp"
                         android:layout_marginVertical="200dp"
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
-                        android:text="@string/text_movieTitle5"
                         android:onClick="goToInfoMid"
+                        android:text="@string/text_movieTitle5"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
@@ -282,13 +307,13 @@
                     <TextView
                         android:id="@+id/textHome5"
                         android:layout_width="116dp"
-                        android:layout_height="34dp"
+                        android:layout_height="48dp"
                         android:layout_marginVertical="200dp"
                         android:layout_marginEnd="120dp"
                         android:layout_marginBottom="10sp"
+                        android:onClick="goToInfoBack"
                         android:text="@string/text_movieTitle6"
                         android:textAlignment="center"
-                        android:onClick="goToInfoBack"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
