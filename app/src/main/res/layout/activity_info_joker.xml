@@ -68,7 +68,6 @@
                         android:orientation="horizontal"
                         android:background="@drawable/gradient_background"
                         >
-
                         <TextView
                             android:id="@+id/jokerText"
                             android:layout_width="match_parent"

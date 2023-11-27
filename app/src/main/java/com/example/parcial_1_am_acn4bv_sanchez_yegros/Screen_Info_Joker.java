@@ -26,6 +26,8 @@ public class Screen_Info_Joker extends AppCompatActivity {
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
 
+
+
     }
 
 

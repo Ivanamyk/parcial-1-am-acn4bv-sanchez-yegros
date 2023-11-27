@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646553198494",
+    "project_id": "streamix-bbfa5",
+    "storage_bucket": "streamix-bbfa5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646553198494:android:91738e81fe5c951349008f",
+        "android_client_info": {
+          "package_name": "com.example.parcial_1_am_acn4bv_sanchez_yegros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQY1OTIIRA4SrWTJ4f-khMus4zBSHqZWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
