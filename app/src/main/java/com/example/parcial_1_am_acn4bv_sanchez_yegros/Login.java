@@ -47,6 +47,11 @@ public class Login extends AppCompatActivity {
         this.login(email,password);
 
     }
+    public void GoRegisterActivity(View view){
+        mAuth.signOut();
+        Intent intent = new Intent(this, RegisterNewAccount.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
