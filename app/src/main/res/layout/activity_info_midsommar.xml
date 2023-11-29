@@ -36,10 +36,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="50" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="50" />
+            <TextView
+                android:id="@+id/CerrarSesionMid"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:layout_weight="15"
+                android:onClick="LogOuTClick"
+                android:text="Cerrar Sesion"
+                android:textColor="@color/white"
+                />
 
         </LinearLayout>
 

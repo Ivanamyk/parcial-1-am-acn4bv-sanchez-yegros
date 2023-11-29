@@ -9,10 +9,14 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Screen_Info_Back extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_back);
 
@@ -30,6 +34,12 @@ public class Screen_Info_Back extends AppCompatActivity {
 
     public void backMainPage(View view){
         Intent intent = new Intent(this,Main_Page.class);
+        startActivity(intent);
+    }
+
+    public void LogOuTClick(View view){
+        mAuth.signOut();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

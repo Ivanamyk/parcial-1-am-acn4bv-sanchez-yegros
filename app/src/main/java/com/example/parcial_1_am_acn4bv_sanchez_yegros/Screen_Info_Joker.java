@@ -9,10 +9,13 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class Screen_Info_Joker extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
+public class Screen_Info_Joker extends AppCompatActivity {
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_joker);
 
@@ -33,6 +36,12 @@ public class Screen_Info_Joker extends AppCompatActivity {
 
     public void backMainPage(View view){
         Intent intent = new Intent(this,Main_Page.class);
+        startActivity(intent);
+    }
+
+    public void LogOuTClick(View view){
+        mAuth.signOut();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
