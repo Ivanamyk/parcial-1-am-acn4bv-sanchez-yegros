@@ -23,6 +23,20 @@
             android:scrollbarTrackVertical="@drawable/left_arrow_svgrepo_com"
             app:srcCompat="@drawable/left_arrow_svgrepo_com"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/CerrarContacto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="LogOuTClick"
+            android:text="Cerrar Sesion"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <TextView

@@ -8,13 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Main_Page extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
 
+        mAuth = FirebaseAuth.getInstance();
         ImageView imagePearl = findViewById(R.id.pearl);
 
         imagePearl.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +104,12 @@ public class Main_Page extends AppCompatActivity {
 
     public void goToContactUs(View view){
         Intent intent = new Intent(this, Screen_ContactUs.class);
+        startActivity(intent);
+    }
+
+    public void LogOuTClick(View view){
+        mAuth.signOut();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

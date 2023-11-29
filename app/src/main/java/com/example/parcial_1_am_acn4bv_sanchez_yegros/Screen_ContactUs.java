@@ -10,12 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Screen_ContactUs extends AppCompatActivity {
     EditText et_subject, et_message;
     Button btn;
-
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_contact_us);
 
@@ -56,6 +59,12 @@ public class Screen_ContactUs extends AppCompatActivity {
     }
     public void backMainPage(View view){
         Intent intent = new Intent(this,Main_Page.class);
+        startActivity(intent);
+    }
+
+    public void LogOuTClick(View view){
+        mAuth.signOut();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

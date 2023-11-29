@@ -40,7 +40,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="@id/imageView"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -66,11 +65,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
+        android:layout_marginTop="-30dp"
         android:layout_marginEnd="178dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_background"
         android:onClick="LoginButtonClick"
-        android:text="ingresar"
+        android:text="    Ingresar   "
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -78,4 +78,21 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_background"
+        android:text="Registrarse"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
