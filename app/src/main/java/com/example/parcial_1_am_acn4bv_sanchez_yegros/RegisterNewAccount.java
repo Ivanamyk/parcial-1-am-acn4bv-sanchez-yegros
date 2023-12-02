@@ -1,13 +1,13 @@
 package com.example.parcial_1_am_acn4bv_sanchez_yegros;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -50,5 +50,10 @@ public class RegisterNewAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_new_account);
         mAuth = FirebaseAuth.getInstance();
+    }
+
+    public void backToLogin(View view){
+        Intent intent = new Intent(this,Login.class);
+        startActivity(intent);
     }
 }
