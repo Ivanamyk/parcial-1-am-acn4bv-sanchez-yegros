@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".RegisterNewAccount"
-    >
+    tools:context=".RegisterNewAccount">
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,6 +25,21 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_weight="50"
+        android:contentDescription="@string/Image_Start"
+        android:onClick="backMain"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow_svgrepo_com"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/mailNewAccount"
         android:layout_width="wrap_content"
@@ -35,8 +49,8 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/passwordNewAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
@@ -50,24 +64,25 @@
         android:layout_height="50dp"
         android:layout_marginTop="400dp"
         android:backgroundTint="@android:color/white"
-        android:textColor="@android:color/white"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="numberPassword"
+        android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/imageView" />
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.85" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
+        android:layout_width="132dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="-30dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginEnd="140dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_background"
         android:onClick="RegisterButtonClick"
