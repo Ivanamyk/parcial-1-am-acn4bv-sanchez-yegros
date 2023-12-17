@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.Map;
@@ -26,10 +27,11 @@ public class RegisterNewAccount extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
 
-    private void addToFirestore(String email, String password) {
+    private void addToFirestore(String email, String password,String uid) {
         Map<String, Object> user = new HashMap<>();
         user.put("email", email);
         user.put("password", password);
+        user.put("uid", uid);
 
         // Add a new document with a generated ID
         db.collection("users")
@@ -55,9 +57,16 @@ public class RegisterNewAccount extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(RegisterNewAccount.this,"Nuevo Usuario",Toast.LENGTH_LONG).show();
-                            addToFirestore(email, password);
-                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                            startActivity(intent);
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            if (user != null) {
+                                // Obtener el UID del usuario
+                                String uid = user.getUid();
+
+                                // Almacenar el UID en Firestore
+                                addToFirestore(email, password,uid);
+
+                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                            startActivity(intent);}
                         } else {
                             Toast.makeText(RegisterNewAccount.this, "Error en el ingreso.",
                                     Toast.LENGTH_SHORT).show();
