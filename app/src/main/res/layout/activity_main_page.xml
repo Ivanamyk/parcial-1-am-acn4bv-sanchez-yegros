@@ -48,11 +48,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="50" />
 
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="50" />
-
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
@@ -63,6 +58,17 @@
                     android:text="Contacto"
                     android:textColor="@color/white"
                     tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textViewUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="50"
+                    android:layout_marginTop="7dp"
+                    android:layout_gravity="center"
+                    android:text="Usuario"
+                    android:onClick="goToUserProfile" />
 
                 <TextView
                     android:id="@+id/CerrarSesion"
