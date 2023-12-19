@@ -8,22 +8,29 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.auth.User;
 
 public class Main_Page extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
-    private TextView textViewUser;
+
+    private Usuario user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,19 +39,7 @@ public class Main_Page extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        getUserDataFromFirestore(db.toString());
-
         ImageView imagePearl = findViewById(R.id.pearl);
-
-        textViewUser = findViewById(R.id.textViewUser);
-
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            String currentUserId = currentUser.getUid();
-            // Obtener el nombre de usuario desde Firestore
-            getUserDataFromFirestore(currentUserId);
-        }
-
 
         imagePearl.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +89,37 @@ public class Main_Page extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            String uid = currentUser.getUid();
+            db
+                    .collection("users")
+                    .whereEqualTo("uid",uid)
+                    .get()
+                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                            if(task.isSuccessful()){
+                                for(QueryDocumentSnapshot documento: task.getResult()){
+                                    String id = documento.getId();
+                                    Object data = documento.getData();
+                                    user = documento.toObject(Usuario.class);
+
+                                    LinearLayout app = findViewById(R.id.LinearHeader);
+                                    TextView userNombre = new TextView(getApplicationContext());
+                                    //TextView userNombre = findViewById(R.id.textViewUser);
+                                    userNombre.setText(user.getUserName());
+                                    app.addView(userNombre);
+                                }
+                            }
+                        }
+                    });
+    }}
+
     public void backMain(View view){
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
@@ -137,24 +163,6 @@ public class Main_Page extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    private void getUserDataFromFirestore(String userId) {
-        DocumentReference userRef = db.collection("users").document(userId);
 
-        userRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-            @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                if (documentSnapshot.exists()) {
-                    String username = documentSnapshot.getString("userName");
-                    // Mostrar el nombre de usuario en el TextView
-                    textViewUser.setText(username);
-                }
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.e("TAG", "Error al obtener los datos del usuario", e);
-            }
-        });
-    }
 
 }
