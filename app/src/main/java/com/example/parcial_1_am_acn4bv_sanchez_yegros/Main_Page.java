@@ -31,6 +31,9 @@ public class Main_Page extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
+
+        getUserDataFromFirestore(db.toString());
+
         ImageView imagePearl = findViewById(R.id.pearl);
 
         textViewUser = findViewById(R.id.textViewUser);

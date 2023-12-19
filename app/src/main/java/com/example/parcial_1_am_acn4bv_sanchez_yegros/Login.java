@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 
 public class Login extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Intent intent = new Intent(getApplicationContext(),Main_Page.class);
                             startActivity(intent);
+
                         } else {
                             Toast.makeText(Login.this, "Error en el ingreso.",
                                     Toast.LENGTH_SHORT).show();
