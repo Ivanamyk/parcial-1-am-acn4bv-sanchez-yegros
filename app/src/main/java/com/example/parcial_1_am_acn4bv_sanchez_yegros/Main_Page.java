@@ -108,12 +108,12 @@ public class Main_Page extends AppCompatActivity {
                                     String id = documento.getId();
                                     Object data = documento.getData();
                                     user = documento.toObject(Usuario.class);
+                                    TextView textViewUser = findViewById(R.id.textViewUser);
+                                    if (textViewUser != null) {
+                                        textViewUser.setText(user.getUserName());
+                                    }
 
-                                    LinearLayout app = findViewById(R.id.LinearHeader);
-                                    TextView userNombre = new TextView(getApplicationContext());
-                                    //TextView userNombre = findViewById(R.id.textViewUser);
-                                    userNombre.setText(user.getUserName());
-                                    app.addView(userNombre);
+
                                 }
                             }
                         }
