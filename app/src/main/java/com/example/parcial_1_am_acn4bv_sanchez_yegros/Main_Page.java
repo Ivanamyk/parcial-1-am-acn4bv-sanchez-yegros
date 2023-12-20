@@ -113,7 +113,6 @@ public class Main_Page extends AppCompatActivity {
                                         textViewUser.setText(user.getUserName());
                                     }
 
-
                                 }
                             }
                         }
