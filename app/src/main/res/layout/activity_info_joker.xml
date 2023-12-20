@@ -37,13 +37,12 @@
                 android:layout_weight="50" />
 
             <TextView
-                android:id="@+id/textViewUser"
+                android:id="@+id/textViewUserJoker"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_weight="50"
                 android:layout_marginBottom="2dp"
-                android:onClick="goToUserProfile"
                 android:text="Usuario"
                 android:textColor="@color/white" />
 

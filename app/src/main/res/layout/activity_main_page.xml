@@ -65,9 +65,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="50"
                     android:layout_marginBottom="2dp"
-                    android:onClick="goToUserProfile"
+                    android:layout_weight="50"
                     android:text="Usuario"
                     android:textColor="@color/white" />
 

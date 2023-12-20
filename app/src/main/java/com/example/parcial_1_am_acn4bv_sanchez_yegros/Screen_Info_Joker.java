@@ -63,7 +63,7 @@ public class Screen_Info_Joker extends AppCompatActivity {
                                     String id = documento.getId();
                                     Object data = documento.getData();
                                     user = documento.toObject(Usuario.class);
-                                    TextView textViewUser = findViewById(R.id.textViewUser);
+                                    TextView textViewUser = findViewById(R.id.textViewUserJoker);
                                     if (textViewUser != null) {
                                         textViewUser.setText(user.getUserName());
                                     }
